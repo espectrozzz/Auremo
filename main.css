@@ -1,0 +1,132 @@
+body
+{
+    font-family: arial;
+    background-image: url(../assets/img/fondoJPG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url();
+    background-position: center;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+/*Custom CSS*/
+#mainBox{
+    display: flex;
+    align-items:center;
+    align-content:space-around;
+
+
+}
+
+@media (max-width: 1200px) {
+    #mainBox {
+      display: grid;
+    }
+  }
+
+
+#leftBox{
+    width: 100%;
+}
+
+#rigthBox{
+    width: 900px;
+    padding: 0 100px 0 0;
+}
+
+
+/*CSS Form*/
+
+
+label{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,  ;
+}
+
+.form-control{
+    border-radius: 9px;
+
+}
+
+.btn{
+    background: red;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background: #72180D;
+}
+
+
+#mainLogo{
+    width: 50%;
+
+}
+
+#canvas{
+    background: red;
+}

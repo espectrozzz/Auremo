@@ -1,0 +1,154 @@
+﻿<html>
+    <head>
+        <title> Rueda de la Fortuna Auremo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/luckySpin.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="body-content">
+            <div class="coupon" id="h4">
+                <div class="general">
+                    <div class="bgMaindiv">
+                        <div class="textHeader">
+                            <h1>Rueleta Auremo </h1>
+                        </div>
+
+
+                    <div id="mainBox">
+
+
+                        <!-- <p>Image to use:</p>
+                            <img id="scream" src="./images/auremowheels.png" alt="The Scream" width="220" height="277">
+ -->
+
+                        <!-- Rueda de la Fortuna -->
+                        <div id="main">
+                            <div class="spin_wheel_section">
+                                <div class="spin_pin"></div>
+                                <div width="438" height="582" class="the_wheel" align="center" valign="center">
+                                    <div class="wheel_inner">
+                                        <canvas id="canvas" width="434" height="434" style="display: none;">
+                                            <p style="color: white" align="center">Lo sentimos tu navegador no es compatible, intenta con otro..</p>
+                                        </canvas>
+
+                                        <img id="rueda" src="./images/ruedasvg.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spin_speed_select_section">
+                                <div class="container">
+                                    <div class="main_sec">
+                                        <h2 id="spinWinResult" class="title"> </h2>
+                                        <input type="button" value="Reset" class="reset_btn" style="display:none;">
+                                    </div>
+                                    <div class="power_controls" style="display:none;">
+                                        <div class="main_sec">
+                                            <h2 class="title"></h2> 
+                                        </div>
+                                        <div class="power">
+                                            <div class="spin_speed">
+                                                <h4 style="color: white;">Seleccione la potencia</h4>
+                                                <div class="spin_type">
+                                                    <a href="javascript:void(0);" id="lowspeed" class="lowspeed" onClick="selectedSpeed(1);">Baja</a>
+                                                    <a href="javascript:void(0);" id="mediumspeed" class="mediumspeed" onClick="selectedSpeed(2);">Media</a>
+                                                    <a href="javascript:void(0);" id="highspeed" class="highspeed" onClick="selectedSpeed(3);">Alta</a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="spin_now_btn">
+                                                <a id="spin_button" href="javascript:void(0);">Spin Now!</a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formulario -->
+                        <div id="formBox">
+                            <img id="mainLogo" src="./images/Logo/Logo Auremo solo.png" alt="">
+                            <img id="logoLed" src="./images/Logo/logo naoevoJPG.png" alt="">
+                            <!-- <form action="enviar.php" method="POST" class="row g-3"> -->
+                            
+                                <div class="col-xl-12">
+                                  <label for="inputName" class="form-label">Nombre Completo</label>
+                                  <input type="name" name="name" class="form-control" id="inputName" required>
+                                </div>
+                                <div class="col-xl-6">
+                                  <label for="inputCar" class="form-label">Modelo de vehículo</label>
+                                  <input type="text" name="vehiculo" class="form-control" id="inputCar" required>
+                                </div>
+                                <div class="col-xl-6">
+                                  <label for="inputYear" class="form-label">Año</label>
+                                  <input tpe="number" name="year" min="1990" class="form-control" id="inputYear" required>                  
+                                </div>
+                                <div class="col-xl-6">
+                                    <label for="inputPhone" class="form-label">Celular</label>
+                                    <input type="phone" name="phone" class="form-control" id="inputPhone" required>                  
+                                  </div>
+                                <div class="col-6">
+                                  <label for="inputDireccion" class="form-label">Dirección</label>
+                                  <input type="text" name="adress" class="form-control" id="inputDireccion" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" name="email" class="form-control" id="inputEmail" required>
+                                  </div>
+                
+                                <!-- <div class="col-6">
+                                  <button href="javascript:void(0);" type="submit" class="btn btn-primary"onClick="startSpin();">¡PARTICIPAR EN <strong>RULETA AUREMO</strong>!</button>
+                                </div> -->
+                                <div class="spin_now_btn">
+                                    <a id="spin_button" type="submit" href="javascript:void(0);">¡PARTICIPAR EN <strong>RULETA AUREMO</strong>!</a>
+                                </div>
+                              </form>
+                
+                        </div>
+                    </div>    
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="footer_section">
+                <div class="container">
+                    <p>If you have any suggestions, please get in touch with an email: <a href="mailto:support@aliansoftware.net">support@aliansoftware.net</a></p>
+                    <p>If you like Spin Win, it would mean the world to us if you could leave a review. For more support, please open a help ticket</p>
+                </div>
+            </div> -->
+        </div>
+
+        <div id="spin" class="modal fade spin_result" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="modal-body">
+                        <p id="displayprice"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("canvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+}
+</script>
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jQuery.luckywheel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+
+    </body>
+</html>
+
+
