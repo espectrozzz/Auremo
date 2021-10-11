@@ -5,6 +5,11 @@ select {
     background-color:transparent;
 }
 
+body{
+    background-image: url(../images/fondo\ grande.jpg);
+    background-position: center;
+}
+
 
 .modal {
     display: none; /* Hidden by default */
@@ -318,10 +323,10 @@ body{
 label {
     color: #495a6c;
     font-size: 16px;
-    font-family: 'Roboto-Regular';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, ;
     font-weight: normal;
     display: block;
-    margin-bottom:7px;
+    margin: 15px 0 0 0;
 }
 .input_box {
     font-size: 14px;
@@ -2189,37 +2194,45 @@ td.highspeed
 
 /* Custom CSS */
 
-
-.body-content{
-    background-image: url(../images/fondo\ grande.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
 #mainBox{
-    display: flex;
-    align-items:stretch;
-    align-content:space-around;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
-
-
-#main{
-    width: 50%;
-
-
-
-}
-
-
-/* CSS Form */
-
 
 #formBox{
-    width: 50%;
-    padding: 0 90px 0 0;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    grid-row: 1/2;    
 
 }
+
+
+@media (min-width: 768px) {
+    #mainBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    #formBox{
+        width: 70%;
+        grid-row: auto;  
+       
+    
+    }
+    
+
+  }
+
+
+
+
+
+
+
+
+
+
 
 label{
     color: white;
@@ -2253,11 +2266,20 @@ label{
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 90px;
     font-weight: bolder;
-    padding: 90px 0 0 0;
+    padding: 90px 0 30px 0;
 }
 
+
+
+.spin_pin{
+    z-index: 99 !important;
+}
+
+.power{
+    display: none !important;
+}
 
 
 

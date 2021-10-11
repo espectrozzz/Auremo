@@ -1065,7 +1065,7 @@ Luckywheel.prototype.getRotationPosition = function () {
         rawAngle = (360 + rawAngle);    // Make in the range 0-360. Is plus because raw is still negative.
     }
 console.log(rawAngle)
-    //document.getElementById('rueda').style.transform 
+document.getElementById('rueda').style.transform ='rotate('+rawAngle+'deg)'
     return rawAngle;
 }
 

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/luckySpin.css" rel="stylesheet">
+        <link href="./main.css"
     </head>
     <body>
 
@@ -13,18 +14,12 @@
                 <div class="general">
                     <div class="bgMaindiv">
                         <div class="textHeader">
-                            <h1>Rueleta Auremo </h1>
+                            <h1>Ruleta Auremo </h1>
                         </div>
 
 
                     <div id="mainBox">
 
-
-                        <!-- <p>Image to use:</p>
-                            <img id="scream" src="./images/auremowheels.png" alt="The Scream" width="220" height="277">
- -->
-
-                        <!-- Rueda de la Fortuna -->
                         <div id="main">
                             <div class="spin_wheel_section">
                                 <div class="spin_pin"></div>
@@ -33,8 +28,9 @@
                                         <canvas id="canvas" width="434" height="434" style="display: none;">
                                             <p style="color: white" align="center">Lo sentimos tu navegador no es compatible, intenta con otro..</p>
                                         </canvas>
-
-                                        <img id="rueda" src="./images/ruedasvg.svg">
+                                        <div style="transform: scale(1.3);">
+                                            <img style="z-index: 0;" id="rueda" src="./images/ruedasvg.svg">
+                                        </div>    
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +66,7 @@
                         <div id="formBox">
                             <img id="mainLogo" src="./images/Logo/Logo Auremo solo.png" alt="">
                             <img id="logoLed" src="./images/Logo/logo naoevoJPG.png" alt="">
-                            <!-- <form action="enviar.php" method="POST" class="row g-3"> -->
+                            <form action="./sendMail.php" method="POST" class="row g-3" target="_blank">
                             
                                 <div class="col-xl-12">
                                   <label for="inputName" class="form-label">Nombre Completo</label>
@@ -90,7 +86,7 @@
                                   </div>
                                 <div class="col-6">
                                   <label for="inputDireccion" class="form-label">Dirección</label>
-                                  <input type="text" name="adress" class="form-control" id="inputDireccion" required>
+                                  <input type="text" name="adress" class="form-control" id="inputAddress" required>
                                 </div>
                                 <div class="col-6">
                                     <label for="inputEmail4" class="form-label">Email</label>
@@ -101,9 +97,29 @@
                                   <button href="javascript:void(0);" type="submit" class="btn btn-primary"onClick="startSpin();">¡PARTICIPAR EN <strong>RULETA AUREMO</strong>!</button>
                                 </div> -->
                                 <div class="spin_now_btn">
-                                    <a id="spin_button" type="submit" href="javascript:void(0);">¡PARTICIPAR EN <strong>RULETA AUREMO</strong>!</a>
+                                    <a onclick="main.js"  id="spin_button" type="submit" href="javascript:void(0);">¡PARTICIPAR EN <strong>RULETA AUREMO</strong>!</a>
                                 </div>
                               </form>
+
+                              <!-- <div class="container">
+                                <h1>FormSubmit Demo</h1>
+                                <form target="_blank" action="https://formsubmit.co/jairo.guillen86@gmail.com" method="POST">
+                                  <div class="form-group">
+                                    <div class="form-row">
+                                      <div class="col">
+                                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                      </div>
+                                      <div class="col">
+                                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                                  </div>
+                                  <button  id="spin_button"type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                                </form>
+                              </div> -->
                 
                         </div>
                     </div>    
@@ -131,7 +147,7 @@
         </div>
 
 
-        <script>
+        <!-- <script>
 
 <script>
 function myCanvas() {
@@ -140,13 +156,27 @@ function myCanvas() {
   var img = document.getElementById("scream");
 }
 </script>
-        </script>
+        </script> -->
+
+
+        <script>
+            $.ajax({
+                type: "POST",
+                url: "enviar.php",
+                data: { "codigo" :  "codigo" },
+                success: function(data){
+                    alert(data);
+                }
+            });
+            </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jQuery.luckywheel.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
+<script src="js/script.js" type="js/sendMail.js"></script>
+
 
     </body>
 </html>

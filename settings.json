@@ -1,1 +1,142 @@
-{"data":[{"segmentsList":[{"txtDisplayText":"ALINEAMIENTO\u0003DE LUCES((VALORADO EN L.500) ","txtResultText":"You got 20% discount.","txtBackgroundColor":"#FF0000","ddlGravity":"30","hdnGravityPerc":"15","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"15%","txtResultText":"You got 15% discount.","txtBackgroundColor":"#24CFFF","ddlGravity":"10","hdnGravityPerc":"5","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"25%","txtResultText":"You got 25% discount.","txtBackgroundColor":"#5CFFA0","ddlGravity":"20","hdnGravityPerc":"10","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"20%","txtResultText":"You got 20% discount.","txtBackgroundColor":"#7A6EFF","ddlGravity":"10","hdnGravityPerc":"5","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"40%","txtResultText":"You got 40% discount.","txtBackgroundColor":"#FFC457","ddlGravity":"10","hdnGravityPerc":"5","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"Loss","txtResultText":"You Loss the game.","txtBackgroundColor":"#D09EFF","ddlGravity":"80","hdnGravityPerc":"40","IsCouponCode":"false","CouponCode":""},{"txtDisplayText":"70%","txtResultText":"You got 70% discount.","txtBackgroundColor":"#ABF2FF","ddlGravity":"0","hdnGravityPerc":"0","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"55%","txtResultText":"You got 55% discount.","txtBackgroundColor":"#9582FF","ddlGravity":"0","hdnGravityPerc":"0","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"Jackpot","txtResultText":"You Win Jackpot.","txtBackgroundColor":"#FFBA70","ddlGravity":"0","hdnGravityPerc":"0","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"95%","txtResultText":"You got 95% discount.","txtBackgroundColor":"#46C97D","ddlGravity":"0","hdnGravityPerc":"0","IsCouponCode":"true","CouponCode":null},{"txtDisplayText":"50%","txtResultText":"You got 50% discount.","txtBackgroundColor":"#87D9FF","ddlGravity":"10","hdnGravityPerc":"5","IsCouponCode":"true","CouponCode":null}],"OuterRadius":"198","InnerRadius":"60","WheelStrokeColor":"#FFFFFF","WheelStrokeWidth":"1","WheelTextColor":"#FFFFFF","WheelTextSize":"12","GameOverText":"Gracias Por Jugar la Ruleta AUREMO. Te esperamos en nuestra tienda","IntroText":"\u00a1Selecciona la Potencia y Gana!","backgroundOption":{"type":"image","value":""},"centerWheelImage":"wheelcenter_58dca0f9449007f0b8972ba6ad6a3c03.png","WheelPinImage":"wheelcenter_43b939d2985afdddc34ccc08fcbff6c5.png","enablediscountbar":"on","countdowntime":"15","position":"screen_bottom","showdesktop":"on","desktopintent":"on","desktopinterval":"on","DesktopIntervaltext":"17","showmobile":"off","mobileintent":"on","mobileinterval":"on","MobileIntervaltext":"19","cookiedays":"1"}]}
+{
+  "data": [
+    {
+      "segmentsList": [
+        {
+          "txtDisplayText": "Alineamiento",
+          "txtResultText": "Alineamiento de Luces(Valorado en L. 500)",
+          "txtBackgroundColor": "#FFC252",
+          "ddlGravity": "30",
+          "hdnGravityPerc": "15",
+          "IsCouponCode": "true",
+          "CouponCode": "AUALIL"
+        },
+        {
+          "txtDisplayText": "2x1",
+          "txtResultText": "2x1 Set Luces delanteras LED",
+          "txtBackgroundColor": "#FF8CDB",
+          "ddlGravity": "30",
+          "hdnGravityPerc": "15",
+          "IsCouponCode": "true",
+          "CouponCode": "AU2X1LD"
+        },
+        {
+          "txtDisplayText": "Lose",
+          "txtResultText": "Vuelve a Participar",
+          "txtBackgroundColor": "#24CFFF",
+          "ddlGravity": "10",
+          "hdnGravityPerc": "5",
+          "IsCouponCode": "false",
+          "CouponCode": ""
+        },
+        {
+          "txtDisplayText": "20%",
+          "txtResultText": "20% de Descuento en Set de Luces Delanteras LED",
+          "txtBackgroundColor": "#5CFFA0",
+          "ddlGravity": "20",
+          "hdnGravityPerc": "10",
+          "IsCouponCode": "true",
+          "CouponCode": "AU20"
+        },
+        {
+          "txtDisplayText": "Set",
+          "txtResultText": "1 Set de Luces delanteras (Valorado en L. 1, 000)",
+          "txtBackgroundColor": "#7A6EFF",
+          "ddlGravity": "10",
+          "hdnGravityPerc": "5",
+          "IsCouponCode": "true",
+          "CouponCode": "AUSETLD"
+        },
+        {
+          "txtDisplayText": "30%",
+          "txtResultText": "30% de Descuento  en Set de Luces delanteras LED",
+          "txtBackgroundColor": "#FFC457",
+          "ddlGravity": "10",
+          "hdnGravityPerc": "5",
+          "IsCouponCode": "true",
+          "CouponCode": "AU30LD"
+        },
+        {
+          "txtDisplayText": "Set",
+          "txtResultText": "1 Set de Luces Delanteras Led Serie S3(Valorado en L, 1,700)",
+          "txtBackgroundColor": "#D09EFF",
+          "ddlGravity": "80",
+          "hdnGravityPerc": "40",
+          "IsCouponCode": "True",
+          "CouponCode": "AUSETS3"
+        },
+        {
+          "txtDisplayText": "40%",
+          "txtResultText": "40% de Descuento Set de luces Delanteras LED",
+          "txtBackgroundColor": "#ABF2FF",
+          "ddlGravity": "0",
+          "hdnGravityPerc": "0",
+          "IsCouponCode": "true",
+          "CouponCode": "AU40LD"
+        },
+        {
+          "txtDisplayText": "Set",
+          "txtResultText": "1 Set de Luces delanteras Les Serie GT6 (Valorado en L, 2,400)",
+          "txtBackgroundColor": "#9582FF",
+          "ddlGravity": "0",
+          "hdnGravityPerc": "0",
+          "IsCouponCode": "true",
+          "CouponCode": "AUSETGT6"
+        },
+        {
+          "txtDisplayText": "Lose",
+          "txtResultText": "Vuelve a Participar",
+          "txtBackgroundColor": "#FFBA70",
+          "ddlGravity": "0",
+          "hdnGravityPerc": "0",
+          "IsCouponCode": "false",
+          "CouponCode": ""
+        },
+        {
+          "txtDisplayText": "Set",
+          "txtResultText": "Set de Luces interior (Valorado en 500)",
+          "txtBackgroundColor": "#46C97D",
+          "ddlGravity": "0",
+          "hdnGravityPerc": "0",
+          "IsCouponCode": "true",
+          "CouponCode": "AUSETLI"
+        },
+        {
+          "txtDisplayText": "20%",
+          "txtResultText": "20% de Descuento en Luces delanteras LED",
+          "txtBackgroundColor": "#87D9FF",
+          "ddlGravity": "10",
+          "hdnGravityPerc": "5",
+          "IsCouponCode": "true",
+          "CouponCode": "AU20LD"
+        }
+      ],
+      "OuterRadius": "212",
+      "InnerRadius": "60",
+      "WheelStrokeColor": "#FFFFFF",
+      "WheelStrokeWidth": "3",
+      "WheelTextColor": "#FFFFFF",
+      "WheelTextSize": "20",
+      "GameOverText": "THANK YOU FOR PLAYING SPIN2WIN WHEEL. COME AND PLAY AGAIN SOON!",
+      "IntroText": "YOU HAVE TO CLICK SPIN BUTTON TO WIN IT!",
+      "backgroundOption": {
+        "type": "image",
+        "value": "background_12ec1d70a7c72c01f48a1d4416074129.jpg"
+      },
+      "centerWheelImage": "wheelcenter_b8aba481386aabee47bb588032606137.png",
+      "WheelPinImage": "wheelcenter_42b535480fd11de938ec249bf2b60678.png",
+      "enablediscountbar": "on",
+      "countdowntime": "15",
+      "position": "screen_bottom",
+      "showdesktop": "on",
+      "desktopintent": "on",
+      "desktopinterval": "on",
+      "DesktopIntervaltext": "17",
+      "showmobile": "off",
+      "mobileintent": "on",
+      "mobileinterval": "on",
+      "MobileIntervaltext": "19",
+      "cookiedays": "5"
+    }
+  ]
+}

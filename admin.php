@@ -66,7 +66,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $IsCouponCode = $_POST['chkCouponCode' . $strSegments[$i] . ''];
             $txtCouponCodeText = $_POST['txtCouponCodeText' . $strSegments[$i] . ''];
-            $txtCouponCodeText = $_POST['imagenfondo' . $strSegments[$i] . ''];
 
             $segments[] = array(
                 'txtDisplayText' => $txtDisplayText,
@@ -76,7 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 'hdnGravityPerc' => $gravityPerc,
                 'IsCouponCode' => ($IsCouponCode == 'Yes' ? 'true' : 'false'),
                 'CouponCode' => ($IsCouponCode == 'Yes' ? $txtCouponCodeText : ''),
-                
             );
         }
     }

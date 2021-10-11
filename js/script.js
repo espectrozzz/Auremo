@@ -220,6 +220,43 @@ $(document).on("click", "#spin_button", function () {
             //   c = arrsp.splice(arrsp.length * Math.random() | 0, 1)[0] ;
         }
 
+        if (inputName.value === "") {
+            alert("Por favor, escribe tu Nombre Completo.");
+            inputName.focus();
+            return false;
+          }
+          
+          if (inputCar.value === "") {
+              
+              alert("Por favor, Escriba el modelo de su vehiculo");
+              inputCar.focus();
+              return false;
+            }
+            if (inputYear.value === "") {
+              alert("Por favor, Escriba el año de su carro");
+              inputYear.focus();
+              return false;
+            }
+            if (inputPhone.value === "") {
+              alert("Por favor, Escriba su Celular");
+              inputPhone.focus();
+              return false;
+            }
+          if (inputAddress.value === "") {
+              alert("Por favor, escribe su Dirección");
+              inputAddress.focus();
+              return false;
+            }
+            if (inputEmail.value === "") {
+              alert("Por favor, escribe tu correo electrónico");
+              inputEmail.focus();
+              return false;
+            }
+
+            
+
+        
+
         // Disable the spin button so can't click again while wheel is spinning.             document.getElementById('spin_button').src = "spin_off.png";
         document.getElementById('spin_button').className = "";
 
@@ -231,12 +268,16 @@ $(document).on("click", "#spin_button", function () {
         globlefuncgeneral.wheelSpinning = true;
     }
 
+
+    
+
     setCookie("canspin", "no", globlefuncgeneral.cookidy);
     $("#spin_button").removeAttr("onclick");
     $(".power_controls").hide();
 
 
 });
+
 
 // -------------------------------------------------------
 // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
@@ -265,6 +306,8 @@ function alertWinResult(selectedSegment) {
     $("#displayprice").html(response);
     $('#spin').modal('show');
     $(".reset_btn").show();
+
+    
 }
 
 function loadJSON(callback) {

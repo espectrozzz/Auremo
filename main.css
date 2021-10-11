@@ -1,10 +1,10 @@
-body
+/* body
 {
     font-family: arial;
     background-image: url(../assets/img/fondoJPG.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-}
+    background-repeat: repeat;
+} */
 
 /* Sets the background image for the wheel */
 td.the_wheel
@@ -71,42 +71,21 @@ td.pw3
     margin-bottom: 5px;
 }
 
-/*Custom CSS*/
-#mainBox{
-    display: flex;
-    align-items:center;
-    align-content:space-around;
 
 
-}
-
-@media (max-width: 1200px) {
-    #mainBox {
-      display: grid;
-    }
-  }
-
-
-#leftBox{
-    width: 100%;
-}
-
-#rigthBox{
-    width: 900px;
-    padding: 0 100px 0 0;
-}
 
 
 /*CSS Form*/
 
-
+/* 
 label{
     color: white;
     text-transform: uppercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,  ;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, ;
+    margin: 1000px 0 0 0;
+} */
 
-.form-control{
+/* .form-control{
     border-radius: 9px;
 
 }
@@ -130,3 +109,9 @@ label{
 #canvas{
     background: red;
 }
+
+.spin_pin{
+    background-repeat: no-repeat;
+    background-image: url(images/spinIcon.png) !important;
+    z-index: 99;
+} */
