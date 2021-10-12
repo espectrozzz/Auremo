@@ -198,6 +198,8 @@ function selectedSpeed(speedLevel) {
 // -------------------------------------------------------
 $(document).on("click", "#spin_button", function () {
 
+    
+
     // Ensure that spinning can't be clicked again while already running.
     if (globlefuncgeneral.wheelSpinning == false) {
 
@@ -269,7 +271,15 @@ $(document).on("click", "#spin_button", function () {
     }
 
 
-    
+    $.ajax({
+        url:"sendMail.php",    //the page containing php script
+        type: "post",    //request type,
+        dataType: 'json',
+        data: {registration: "success", name: "xyz", email: "abc@gmail.com"},
+        success:function(result){
+            console.log(result);
+        }
+    });
 
     setCookie("canspin", "no", globlefuncgeneral.cookidy);
     $("#spin_button").removeAttr("onclick");
